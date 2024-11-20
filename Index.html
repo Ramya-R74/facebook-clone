@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SocialBook - A Facebook clone project</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- || Navbar design  -->
+    <nav>
+      <!-- left navbar design -->
+      <div class="nav-left">
+        <img
+          src="socialbook_img/images/logo.png"
+          class="logo"
+          title="Company Logo"
+        />
+        <ul>
+          <li><img src="socialbook_img/images/notification.png" alt="" /></li>
+          <li><img src="socialbook_img/images/inbox.png" alt="" /></li>
+          <li><img src="socialbook_img/images/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <!-- right navbar design -->
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="socialbook_img/images/search.png" />
+          <input type="search" placeholder="Search here" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img
+            src="socialbook_img/images/profile-pic.png"
+            alt="User profile pic"
+            title="My profile-pic"
+          />
+        </div>
+      </div>
+
+      <!----------------------------- User profile setting menu ------------------------->
+    <div class="user-setting-menu">
+
+      <div id="bcg-toggle-btn" class="bcg-toggle-btn-on">
+          <span></span>
+      </div>
+
+      <div class="user-profile">
+        <img
+          src="socialbook_img/images/profile-pic.png"
+          alt="user-profile"
+          title="profile-pic"
+        />
+        <div>
+          <p>Harry Porter</p>
+          <a href="profile.html">See your profile</a>
+        </div>
+      </div>
+      <hr>
+      <div class="user-profile">
+        <img
+          src="socialbook_img/images/feedback.png"
+          alt="user-profile"
+          title="profile-pic"
+        />
+        <div>
+          <p>Give Feedback</p>
+          <a href="#">Help us to improve more</a>
+        </div>
+      </div>
+      <hr>
+
+      <!------------------------------------- user setting list ----------------------------->
+      <div class="user-setting-list">
+        <img src="socialbook_img/images/setting.png" class="settings-icon">
+        <a href="#">Settings & Privacy</a> <img src="socialbook_img/images/arrow.png" width="5px">
+      </div>
+      <div class="user-setting-list">
+        <img src="socialbook_img/images/help.png" class="settings-icon">
+        <a href="#">Help & Support</a> <img src="socialbook_img/images/arrow.png" width="5px">
+      </div>
+      <div class="user-setting-list">
+        <img src="socialbook_img/images/display.png" class="settings-icon">
+        <a href="#">Display & Accessibility</a> <img src="socialbook_img/images/arrow.png" width="5px">
+      </div>
+      <div class="user-setting-list">
+        <img src="socialbook_img/images/logout.png" class="settings-icon">
+        <a href="#">Logout</a> <img src="socialbook_img/images/arrow.png" width="5px">
+      </div>
+    </div>
+
+    </nav>
+
+    <!-- Main container design -->
+    <div class="container">
+      <!--------------------------------------- left sidebar --------------------------------------------------------------->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"
+            ><img src="socialbook_img/images/news.png" alt="" />Treanding Hot
+            News</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/friends.png" alt="" />Friends</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/group.png" alt="" />Groups</a
+          >
+          <a href="#"
+            ><img
+              src="socialbook_img/images/marketplace.png"
+              alt=""
+            />Marketplace</a
+          >
+          <a href="#"
+            ><img src="socialbook_img/images/watch.png" alt="" />Watch more</a
+          >
+          <a href="#">See More</a>
+        </div>
+        <!-- shortcut links -->
+        <div class="shortcut">
+          <p>Your Shortcuts</p>
+          <a href="#"
+            ><img
+              src="socialbook_img/images/shortcut-1.png"
+              alt="Shortcut links"
+            />Web Developers</a
+          >
+          <a href="#"
+            ><img
+              src="socialbook_img/images/shortcut-2.png"
+              alt="Shortcut links"
+            />Web Design Course</a
+          >
+          <a href="#"
+            ><img
+              src="socialbook_img/images/shortcut-3.png"
+              alt="Shortcut links"
+            />Full Stack Development</a
+          >
+          <a href="#"
+            ><img
+              src="socialbook_img/images/shortcut-4.png"
+              alt="Shortcut links"
+            />Android Developers</a
+          >
+        </div>
+      </div>
+      <!------------------------------ Main content container --------------------------------------->
+      <div class="maincontent">
+        <div class="story-board">
+          <!---------------------- Story1 ----------------------------->
+          <div class="story status1">
+            <img
+              src="socialbook_img/images/upload.png"
+              alt="Upload Your images"
+            />
+            <p>Post Story</p>
+          </div>
+
+          <!---------------------- Story2 ----------------------------->
+          <div class="story status2">
+            <img
+              src="socialbook_img/images/member-1.png"
+              alt="Upload Your images"
+            />
+            <p>Milly Brown</p>
+          </div>
+
+          <!---------------------- Story3 ----------------------------->
+          <div class="story status3">
+            <img
+              src="socialbook_img/images/member-2.png"
+              alt="Upload Your images"
+            />
+            <p>Dave Gray</p>
+          </div>
+
+          <!---------------------- Story4 ----------------------------->
+          <div class="story status4">
+            <img
+              src="socialbook_img/images/member-3.png"
+              alt="Upload Your images"
+            />
+            <p>Ramya Gowda</p>
+          </div>
+
+          <!---------------------- Story5 ----------------------------->
+          <div class="story status5">
+            <img
+              src="socialbook_img/images/member-4.png"
+              alt="Upload Your images"
+            />
+            <p>Simon Jackson</p>
+          </div>
+
+          <!---------------------- Story6 ----------------------------->
+          <div class="story status6">
+            <img
+              src="socialbook_img/images/member-5.png"
+              alt="Upload Your images"
+            />
+            <p>Ruskin Bond</p>
+          </div>
+        </div>
+        <!---------------------------------------------- User-Post Container starts here ------------------------------------------->
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img
+              src="socialbook_img/images/profile-pic.png"
+              alt="user-profile"
+              title="profile-pic"
+            />
+            <div>
+              <p>Harry Porter</p>
+              <small>Public<i class="bx bxs-down-arrow"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="1"
+              placeholder="What's on your mind, Ramya?"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#"
+                ><img src="socialbook_img/images/live-video.png" alt="" />Live
+                Video</a
+              >
+              <a href="#"
+                ><img
+                  src="socialbook_img/images/photo.png"
+                  alt=""
+                />Photo/Video</a
+              >
+              <a href="#"
+                ><img
+                  src="socialbook_img/images/feeling.png"
+                  alt=""
+                />Feeling/Activity</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-------------------------------------------Feed container Starts here ------------------------------------------------>
+        <div class="post-container">
+          <div class="user-profile">
+            <img
+              src="socialbook_img/images/member-7.png"
+              alt="user-profile"
+              title="profile-pic"
+            />
+            <div>
+              <p>Harry Jacson</p>
+              <span>January 15 2021, 17:30 PM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Hello! Guys today i'm sharing the most wonderful day of my life.
+            Today i am blessed with a little baby girl and i named her
+            <strong>Anagha</strong>. <a href="#">#blessedwithbabygirl</a>
+            <a href="#">#mylove</a>
+          </p>
+          <img
+            class="post-img"
+            src="socialbook_img/images/feed-image-1.png"
+            alt="Feed image"
+            title="Mother with her baby"
+          />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div>
+                <img src="socialbook_img/images/like-blue.png" alt="" />400
+              </div>
+              <div>
+                <img src="socialbook_img/images/comments.png" alt="" />50
+              </div>
+              <div><img src="socialbook_img/images/share.png" alt="" />200</div>
+            </div>
+            <div class="post-profile-icon">
+              <img
+                src="socialbook_img/images/member-7.png"
+                alt="profile-pic"
+              /><i class="bx bxs-down-arrow"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------------- Feed- post 2 ----------------------------------------->
+
+        <div class="post-container">
+          <div class="user-profile">
+            <img
+              src="socialbook_img/images/member-4.png"
+              alt="user-profile"
+              title="profile-pic"
+            />
+            <div>
+              <p>Param Chaitanya</p>
+              <span>June 25 2021, 14:30 PM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Here i am sharing about my work experience in <b>Google</b>.<a
+              href="#"
+              >#worklife</a
+            >
+            <a href="#">#mydreamcompany</a>
+          </p>
+          <img
+            class="post-img"
+            src="socialbook_img/images/feed-image-2.png"
+            alt="Feed image"
+            title="Google"
+          />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div>
+                <img src="socialbook_img/images/like-blue.png" alt="" />700
+              </div>
+              <div>
+                <img src="socialbook_img/images/comments.png" alt="" />73
+              </div>
+              <div><img src="socialbook_img/images/share.png" alt="" />400</div>
+            </div>
+            <div class="post-profile-icon">
+              <img
+                src="socialbook_img/images/member-4.png"
+                alt="profile-pic"
+              /><i class="bx bxs-down-arrow"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------------- Feed- post 3 ----------------------------------------->
+
+        <div class="post-container">
+          <div class="user-profile">
+            <img
+              src="socialbook_img/images/member-8.png"
+              alt="user-profile"
+              title="profile-pic"
+            />
+            <div>
+              <p>Prerana Choudary</p>
+              <span>April 3 2021, 11:30 AM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Hello!!!!! here im sharing my new <b>You Tube</b> channel link<a
+              href="#"
+              >RamyasDairy/youtube.com</a
+            >
+            <a href="#">#newhabby</a>
+          </p>
+          <img
+            class="post-img"
+            src="socialbook_img/images/feed-image-4.png"
+            alt="Feed image"
+            title="Google"
+          />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div>
+                <img src="socialbook_img/images/like-blue.png" alt="" />1.8k</div>
+              <div>
+                <img src="socialbook_img/images/comments.png" alt="" />173
+              </div>
+              <div><img src="socialbook_img/images/share.png" alt="" />700</div>
+            </div>
+            <div class="post-profile-icon">
+              <img
+                src="socialbook_img/images/member-8.png"
+                alt="profile-pic"
+              /><i class="bx bxs-down-arrow"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------------- Feed- post 4 ----------------------------------------->
+
+        <div class="post-container">
+          <div class="user-profile">
+            <img
+              src="socialbook_img/images/member-1.png"
+              alt="user-profile"
+              title="profile-pic"
+            />
+            <div>
+              <p>Kiran Swamy</p>
+              <span>December 25 2023, 16:30 PM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Happy birthday to my dear daughter!!!! <b>Ramya</b><a href="#">#happybirthday</a><a href="#">#maygodblessyou</a>
+          </p>
+          <img
+            class="post-img"
+            src="socialbook_img/images/feed-image-5.png"
+            alt="Feed image"
+            title="Google"
+          />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div>
+                <img src="socialbook_img/images/like-blue.png" alt="" />100
+              </div>
+              <div>
+                <img src="socialbook_img/images/comments.png" alt="" />7
+              </div>
+              <div><img src="socialbook_img/images/share.png" alt="" />50</div>
+            </div>
+            <div class="post-profile-icon">
+              <img
+                src="socialbook_img/images/member-1.png"
+                alt="profile-pic"
+              /><i class="bx bxs-down-arrow"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------------- Feed- post 5 ----------------------------------------->
+
+        <div class="post-container">
+          <div class="user-profile">
+            <img
+              src="socialbook_img/images/member-6.png"
+              alt="user-profile"
+              title="profile-pic"
+            />
+            <div>
+              <p>Milly Bobby Brown</p>
+              <span>February 25 2022, 04:30 AM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            This is my new venture.Do support me by following my channel <a
+              href="#"
+              >@Brownventures</a
+            >
+            <a href="#">#mynewbusiness</a>
+          </p>
+          <img
+            class="post-img"
+            src="socialbook_img/images/feed-image-3.png"
+            alt="Feed image"
+            title="Google"
+          />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div>
+                <img src="socialbook_img/images/like-blue.png" alt="" />600
+              </div>
+              <div>
+                <img src="socialbook_img/images/comments.png" alt="" />23
+              </div>
+              <div><img src="socialbook_img/images/share.png" alt="" />70</div>
+            </div>
+            <div class="post-profile-icon">
+              <img
+                src="socialbook_img/images/member-6.png"
+                alt="profile-pic"
+              /><i class="bx bxs-down-arrow"></i>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+      <!-------------------------------------- right sidebar ----------------------------------------------->
+      <div class="right-sidebar">
+        <!-- Right sidebar title -->
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+        <!-------------------------------------------- Right sidebar content  event1   ------------------------------>
+        <div class="event">
+          <div class="left-event">
+            <h4>15</h4>
+            <span>January</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Event</h4>
+            <p><i class="bx bxs-map"></i>Willson Garden Tech park, Bengaluru</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <!------------------------------------------- Event2 ---------------------------------------------------->
+        <div class="event">
+          <div class="left-event">
+            <h4>28</h4>
+            <span>February</span>
+          </div>
+          <div class="right-event">
+            <h4>Web Development Bootcamp</h4>
+            <p><i class="bx bxs-map"></i>Marathahalli Tech park, Bengaluru</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <!---------------------------- Right sidebar Advertisement pane ------------------------------------------------>
+        <div class="sidebar-title">
+          <h4>Advertisments</h4>
+          <a href="#">Close All</a>
+        </div>
+        <!-------------------- Ad1 --------------------------->
+        <div class="ads-pane">
+          <img
+            src="socialbook_img/images/advertisement.png"
+            alt="Advertisement Banner"
+            class="sidebar-ads"
+          />
+          <a href="#"
+            >Doctors Talk: 5 Things that can save you from COVID-19 viral
+            infection</a
+          >
+        </div>
+
+        <!---------------------- Online Conversation pane ------------------------------->
+        <div class="sidebar-title">
+          <h4>Conversations</h4>
+          <a href="#">Hide All</a>
+        </div>
+        <!------------------------ online friends list ----------------------------------->
+        <!-- Friend1 -->
+        <div class="online-list">
+          <div class="online">
+            <img src="socialbook_img/images/member-1.png" alt="profile-pic" />
+          </div>
+          <p>Milly Bobby Brown</p>
+        </div>
+        <!-- Friend2 -->
+        <div class="online-list">
+          <div class="online">
+            <img src="socialbook_img/images/member-2.png" alt="profile-pic" />
+          </div>
+          <p>Mayor Jacson</p>
+        </div>
+        <!-- Friend3 -->
+        <div class="online-list">
+          <div class="online">
+            <img src="socialbook_img/images/member-3.png" alt="profile-pic" />
+          </div>
+          <p>Ramya Gowda</p>
+        </div>
+        <!-- Friend4 -->
+        <div class="online-list">
+          <div class="online">
+            <img src="socialbook_img/images/member-4.png" alt="profile-pic" />
+          </div>
+          <p>Dave Gray</p>
+        </div>
+      </div>
+    </div>
+   <!-- --------------------------------------footer starts here------------------------------------>
+    <div class="footer">
+      <p>All rights reserved &copy; Thecurlydev.com</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
